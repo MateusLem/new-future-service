@@ -311,7 +311,7 @@ A API utiliza autenticação Basic Auth com as seguintes credenciais padrão:
 
 **Criar um usuário**:
 
-```http
+```bash
 curl -X POST "http://localhost:8080/user" \
   -H "Authorization: Basic YWRtaW46ZmlhcA==" \
   -H "Content-Type: application/json" \
@@ -325,28 +325,28 @@ curl -X POST "http://localhost:8080/user" \
 
 **Buscar usuário por ID**:
 
-```http
+```bash
 curl -X GET "http://localhost:8080/user/1" \
   -H "Authorization: Basic YWRtaW46ZmlhcA=="
 ```
 
 **Listar todas as trilhas**:
 
-```http
+```bash
 curl -X GET "http://localhost:8080/trail" \
   -H "Authorization: Basic YWRtaW46ZmlhcA=="
 ```
 
 **Buscar atribuições de um usuário**:
 
-```http
+```bash
 curl -X GET "http://localhost:8080/assignment/user/1" \
   -H "Authorization: Basic YWRtaW46ZmlhcA=="
 ```
 
 **Buscar usuários de uma trilha**:
 
-```http
+```bash
 curl -X GET "http://localhost:8080/assignment/trail/1" \
   -H "Authorization: Basic YWRtaW46ZmlhcA=="
 ```
