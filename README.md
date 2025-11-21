@@ -359,12 +359,15 @@ src/
 │   ├── java/
 │   │   └── com/
 │   │       └── platform/
-│   │           ├── controller/     # Interfaces das APIs
-│   │           ├── service/        # Lógica de negócio
-│   │           ├── repository/     # Camada de dados
-│   │           ├── model/          # Entidades JPA (User, Trail, Assignment)
-│   │           ├── dto/            # DTOs (AssignmentDTO)
-│   │           └── config/         # Configurações
+│   │           ├── api/                     # Interfaces das APIs
+│   │           │    └── dto/                # DTOs
+│   │           ├── controller/              # Implementação das APIs
+│   │           ├── service/                 # Lógica de negócio
+│   │           ├── repository/              # Camada de dados
+│   │           ├── model/                   # Entidades JPA (User, Trail, Assignment)
+│   │           └── infrastructure/          # Infrastrutura do projeto
+│   │                ├── config/             # Configurações do projeto
+│   │                └── exception/          # Tratamento de exceções
 │   └── resources/
 │       └── application.properties  # Configurações da aplicação
 ```
